@@ -21,6 +21,7 @@ class StudentsController < ApplicationController
     @student.active = false if @student.active
     @student.active = true if @student.active == false
 
+    @student.save
     redirect_to student_path(@student)
   end
 
