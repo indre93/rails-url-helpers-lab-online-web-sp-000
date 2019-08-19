@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
 
     @student.active = false if @student.active
-    @student.active = true if @student.active == false
+    @student.active if @student.active == false
 
     @student.save
     redirect_to student_path(@student)
