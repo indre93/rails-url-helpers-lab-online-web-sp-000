@@ -24,7 +24,7 @@ class StudentsController < ApplicationController
       false
     end
 
-    @student.active.save
+    @student.active
     redirect_to student_path(@student)
   end
 
