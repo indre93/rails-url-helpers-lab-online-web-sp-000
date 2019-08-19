@@ -8,12 +8,12 @@ class StudentsController < ApplicationController
   def show
     @student = Student.find(params[:id])
 
-    if @student.active == false 
+    if @student.active == false
       @status = "This student is currently inactive."
     else @student.active == true
       @status = "This student is currently active."
     end
-      
+
   end
 
   def activate
