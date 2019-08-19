@@ -13,7 +13,6 @@ class StudentsController < ApplicationController
     else @student.active == true
       @status = "This student is currently active."
     end
-
   end
 
   def activate
